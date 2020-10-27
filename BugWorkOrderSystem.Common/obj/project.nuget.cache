@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "WF1xu88BEF4OKvO6Nk8IXQbu4LZhoqesHNYrrEBW6FdogZ6hZ1PbvT2NgGfpA1XM/uT3cOrC/4/UETbjyWdMoQ==",
+  "success": true,
+  "projectFilePath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Common/BugWorkOrderSystem.Common.csproj",
+  "expectedPackageFiles": [
+    "/Users/ltzzzzzzz/.nuget/packages/microsoft.extensions.configuration/3.1.9/microsoft.extensions.configuration.3.1.9.nupkg.sha512",
+    "/Users/ltzzzzzzz/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.9/microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "/Users/ltzzzzzzz/.nuget/packages/microsoft.extensions.primitives/3.1.9/microsoft.extensions.primitives.3.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}

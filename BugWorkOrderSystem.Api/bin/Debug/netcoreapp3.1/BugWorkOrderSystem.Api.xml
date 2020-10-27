@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BugWorkOrderSystem.Api</name>
+    </assembly>
+    <members>
+        <member name="M:BugWorkOrderSystem.Api.Controllers.LoginController.Login(BugWorkOrderSystem.Model.ViewModels.Users.UserLogin)">
+            <summary>
+            登陆
+            </summary>
+            <remarks>返回用户信息和token</remarks>
+            <param name="login">登陆账号密码</param>
+            <returns>返回用户信息和token</returns>
+        </member>
+        <member name="M:BugWorkOrderSystem.Api.Controllers.LoginController.GetMD5Password(System.String)">
+            <summary>
+            获取密码MD5字符串
+            </summary>
+            <remarks>返回密码MD5字符串</remarks>
+            <param name="str">密码</param>
+            <returns>返回密码MD5字符串</returns>
+        </member>
+        <member name="F:BugWorkOrderSystem.Api.Startup.Env">
+            <summary>
+            环境
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BugWorkOrderSystem.IServices\BugWorkOrderSystem.IServices.csproj" />
+    <ProjectReference Include="..\BugWorkOrderSystem.Extensions\BugWorkOrderSystem.Extensions.csproj" />
+  </ItemGroup>
+</Project>

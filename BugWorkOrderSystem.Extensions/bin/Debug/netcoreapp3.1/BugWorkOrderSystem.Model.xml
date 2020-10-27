@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BugWorkOrderSystem.Model</name>
+    </assembly>
+    <members>
+        <member name="M:BugWorkOrderSystem.Model.DbSeed.InitDb.InitAsync(BugWorkOrderSystem.Common.Db.SugarContext)">
+            <summary>
+            实体创建数据表
+            </summary>
+            <param name="sugar"></param>
+        </member>
+        <member name="T:BugWorkOrderSystem.Model.Models.Menu">
+            <summary>
+            菜单表
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Menu.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Menu.Icon">
+            <summary>
+            icon
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Menu.Pid">
+            <summary>
+            父Id
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Menu.Model">
+            <summary>
+            模块
+            </summary>
+        </member>
+        <member name="T:BugWorkOrderSystem.Model.Models.Operation">
+            <summary>
+            权限操作表
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Operation.Name">
+            <summary>
+            操作名称
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Operation.Code">
+            <summary>
+            操作编码
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Operation.Method">
+            <summary>
+            操作方法
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Operation.Url">
+            <summary>
+            操作链接
+            </summary>
+        </member>
+        <member name="T:BugWorkOrderSystem.Model.Models.Permission">
+            <summary>
+            权限表
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Permission.Name">
+            <summary>
+            权限名称
+            </summary>
+        </member>
+        <member name="T:BugWorkOrderSystem.Model.Models.PermissionMeun">
+            <summary>
+            菜单权限关联表
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.PermissionMeun.PermissinoId">
+            <summary>
+            权限Id
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.PermissionMeun.MenuId">
+            <summary>
+            菜单Id
+            </summary>
+        </member>
+        <member name="T:BugWorkOrderSystem.Model.Models.PermissionOperation">
+            <summary>
+            操作权限关联表
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.PermissionOperation.PermissinoId">
+            <summary>
+            权限Id
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.PermissionOperation.OperationsId">
+            <summary>
+            操作Id
+            </summary>
+        </member>
+        <member name="T:BugWorkOrderSystem.Model.Models.Role">
+            <summary>
+            角色表
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.Role.Name">
+            <summary>
+            角色名
+            </summary>
+        </member>
+        <member name="T:BugWorkOrderSystem.Model.Models.RolePermission">
+            <summary>
+            角色权限关联表
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.RolePermission.RoleId">
+            <summary>
+            角色Id
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.RolePermission.PermissionId">
+            <summary>
+            权限Id
+            </summary>
+        </member>
+        <member name="T:BugWorkOrderSystem.Model.Models.User">
+            <summary>
+            用户信息表
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.User.IsDeleted">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.User.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.User.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.User.Account">
+            <summary>
+            登陆账号
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.User.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.User.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.User.LastDate">
+            <summary>
+            最后登陆时间
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.User.ErrorCount">
+            <summary>
+            错误次数
+            </summary>
+        </member>
+        <member name="T:BugWorkOrderSystem.Model.Models.UserRole">
+            <summary>
+            用户角色关联表
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.UserRole.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.Models.UserRole.RoleId">
+            <summary>
+            角色Id
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.RootEntity.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.ViewModels.Roles.RoleAdd.Name">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.ViewModels.Users.UserAdd.Name">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.ViewModels.Users.UserAdd.Account">
+            <summary>
+            登陆账号
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.ViewModels.Users.UserAdd.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.ViewModels.Users.UserAdd.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.ViewModels.Users.UserAdd.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.ViewModels.Users.UserLogin.Account">
+            <summary>
+            登陆账号
+            </summary>
+        </member>
+        <member name="P:BugWorkOrderSystem.Model.ViewModels.Users.UserLogin.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="F:BugWorkOrderSystem.Common.Db.SugarContext._db">
+            <summary>
+            SqlSugar
+            </summary>
+        </member>
+        <member name="M:BugWorkOrderSystem.Common.Db.SugarContext.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:BugWorkOrderSystem.Common.Db.SugarContext.EntityToTable(System.Boolean,System.Type[])">
+            <summary>
+            实体转数据表
+            </summary>
+            <param name="createBackup">是否创建备份</param>
+            <param name="entitys">实体</param>
+        </member>
+        <member name="M:BugWorkOrderSystem.Common.Db.SugarContext.Init">
+            <summary>
+            初始化数据库对象
+            </summary>
+            <returns>SqlSugarClient</returns>
+        </member>
+        <member name="M:BugWorkOrderSystem.Common.Db.SugarContext.Check(System.Collections.Generic.List{System.Reflection.PropertyInfo},System.Collections.Generic.List{SqlSugar.DbColumnInfo})">
+            <summary>
+            检查数据表是否需要更新
+            </summary>
+            <param name="fields"></param>
+            <param name="columns"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
