@@ -2,33 +2,73 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using BugWorkOrderSystem.IRepository.Base;
 using BugWorkOrderSystem.IServices.Base;
-using BugWorkOrderSystem.Repository.Base;
+using BugWorkOrderSystem.Model;
 
 namespace BugWorkOrderSystem.Services.Base
 {
-    public class BaseServices<TEntity> : IBaseServices<TEntity> where TEntity : class
+    public class BaseServices<TEntity> : IBaseServices<TEntity> where TEntity : class, new()
     {
-        private readonly IBaseRepository<TEntity> dal;
-
-        public BaseServices(IBaseRepository<TEntity> Dal)
+        /// <summary>
+        /// 基类，从子类获取
+        /// </summary>
+        public IBaseRepository<TEntity> baseDal;
+        /// <summary>
+        /// 新增数据
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public async Task<int> Add(TEntity entity)
         {
-            dal = Dal;
+            return await baseDal.Add(entity);
         }
-
-        public Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> whereExpression, Expression<Func<TEntity, object>> groupExpression)
+        /// <summary>
+        /// 根据Ids删除数据
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
+        public async Task<bool> DeleteByIds(Guid[] ids)
         {
-            throw new NotImplementedException();
+            return await baseDal.DeleteByIds(ids);
         }
-
-        public Task<TEntity> Query(Expression<Func<TEntity, bool>> expression)
+        /// <summary>
+        /// 根据id获取实体
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<TEntity> GetById(Guid id)
         {
-            throw new NotImplementedException();
+            return await baseDal.GetById(id);
         }
-
-        public Task<TEntity> QueryById(Guid id)
+        /// <summary>
+        /// 查询数据是否存在
+        /// </summary>
+        /// <param name="lambda">查询条件</param>
+        /// <returns></returns>
+        public async Task<bool> IsExist(Expression<Func<TEntity, bool>> lambda)
         {
-            throw new NotImplementedException();
+            return await baseDal.IsExist(lambda);
+        }
+        /// <summary>
+        /// 查询数据集合
+        /// </summary>
+        /// <param name="where">查询条件</param>
+        /// <param name="order">排序</param>
+        /// <param name="page">分页</param>
+        /// <returns></returns>
+        public async Task<List<TEntity>> QueryList(Expression<Func<TEntity, bool>> where = null, Expression<Func<TEntity, object>> order = null, PageModel<TEntity> page = null)
+        {
+            return await baseDal.QueryList(where, order, page);
+        }
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public async Task<bool> Update(TEntity entity)
+        {
+            return await baseDal.Update(entity);
         }
     }
 }

@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "WF1xu88BEF4OKvO6Nk8IXQbu4LZhoqesHNYrrEBW6FdogZ6hZ1PbvT2NgGfpA1XM/uT3cOrC/4/UETbjyWdMoQ==",
+  "dgSpecHash": "3uqxJ3f1eOfEShwoSBNyan7JogGdK27dhpkhomJP/Vfs8Tln4rn24bfYeS5RRfw5kQ3LKxB/bL3PtEAC3puAcw==",
   "success": true,
   "projectFilePath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Common/BugWorkOrderSystem.Common.csproj",
   "expectedPackageFiles": [
+    "/Users/ltzzzzzzz/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.9/microsoft.aspnetcore.jsonpatch.3.1.9.nupkg.sha512",
+    "/Users/ltzzzzzzz/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.9/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.9.nupkg.sha512",
+    "/Users/ltzzzzzzz/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/ltzzzzzzz/.nuget/packages/microsoft.extensions.configuration/3.1.9/microsoft.extensions.configuration.3.1.9.nupkg.sha512",
     "/Users/ltzzzzzzz/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.9/microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
-    "/Users/ltzzzzzzz/.nuget/packages/microsoft.extensions.primitives/3.1.9/microsoft.extensions.primitives.3.1.9.nupkg.sha512"
+    "/Users/ltzzzzzzz/.nuget/packages/microsoft.extensions.primitives/3.1.9/microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "/Users/ltzzzzzzz/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/ltzzzzzzz/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

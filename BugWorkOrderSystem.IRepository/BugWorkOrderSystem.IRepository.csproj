@@ -7,4 +7,8 @@
   <ItemGroup>
     <ProjectReference Include="..\BugWorkOrderSystem.Model\BugWorkOrderSystem.Model.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UnitOfWork\" />
+    <Folder Include="Base\" />
+  </ItemGroup>
 </Project>

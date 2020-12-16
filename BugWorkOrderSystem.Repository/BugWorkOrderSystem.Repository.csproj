@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BugWorkOrderSystem.Common\BugWorkOrderSystem.Common.csproj" />
-    <ProjectReference Include="..\BugWorkOrderSystem.Model\BugWorkOrderSystem.Model.csproj" />
+    <ProjectReference Include="..\BugWorkOrderSystem.IRepository\BugWorkOrderSystem.IRepository.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UnitOfWork\" />
+    <Folder Include="Base\" />
   </ItemGroup>
 </Project>

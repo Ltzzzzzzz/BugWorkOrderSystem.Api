@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Base\" />
+    <ProjectReference Include="..\BugWorkOrderSystem.Model\BugWorkOrderSystem.Model.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BugWorkOrderSystem.Repository\BugWorkOrderSystem.Repository.csproj" />
+    <Folder Include="Base\" />
   </ItemGroup>
 </Project>

@@ -14,7 +14,7 @@
         "outputPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Common/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ltzzzzzzz/.nuget/NuGet/NuGet.Config"
+          "/Users/ltzzzzzzz/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,7 +36,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[3.1.9, )"
@@ -56,21 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/BugWorkOrderSystem.Model.csproj": {
+    "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.IRepository/BugWorkOrderSystem.IRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/BugWorkOrderSystem.Model.csproj",
-        "projectName": "BugWorkOrderSystem.Model",
-        "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/BugWorkOrderSystem.Model.csproj",
+        "projectUniqueName": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.IRepository/BugWorkOrderSystem.IRepository.csproj",
+        "projectName": "BugWorkOrderSystem.IRepository",
+        "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.IRepository/BugWorkOrderSystem.IRepository.csproj",
         "packagesPath": "/Users/ltzzzzzzz/.nuget/packages/",
-        "outputPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/obj/",
+        "outputPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.IRepository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ltzzzzzzz/.nuget/NuGet/NuGet.Config"
+          "/Users/ltzzzzzzz/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -80,70 +86,8 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Common/BugWorkOrderSystem.Common.csproj": {
-                "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Common/BugWorkOrderSystem.Common.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "sqlSugarCore": {
-              "target": "Package",
-              "version": "[5.0.0.22, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Repository/BugWorkOrderSystem.Repository.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Repository/BugWorkOrderSystem.Repository.csproj",
-        "projectName": "BugWorkOrderSystem.Repository",
-        "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Repository/BugWorkOrderSystem.Repository.csproj",
-        "packagesPath": "/Users/ltzzzzzzz/.nuget/packages/",
-        "outputPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Repository/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/ltzzzzzzz/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Common/BugWorkOrderSystem.Common.csproj": {
-                "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Common/BugWorkOrderSystem.Common.csproj"
-              },
               "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/BugWorkOrderSystem.Model.csproj": {
                 "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/BugWorkOrderSystem.Model.csproj"
               }
@@ -158,6 +102,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -173,7 +118,133 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/BugWorkOrderSystem.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/BugWorkOrderSystem.Model.csproj",
+        "projectName": "BugWorkOrderSystem.Model",
+        "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/BugWorkOrderSystem.Model.csproj",
+        "packagesPath": "/Users/ltzzzzzzz/.nuget/packages/",
+        "outputPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Model/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ltzzzzzzz/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Common/BugWorkOrderSystem.Common.csproj": {
+                "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Common/BugWorkOrderSystem.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "sqlSugarCore": {
+              "target": "Package",
+              "version": "[5.0.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Repository/BugWorkOrderSystem.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Repository/BugWorkOrderSystem.Repository.csproj",
+        "projectName": "BugWorkOrderSystem.Repository",
+        "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Repository/BugWorkOrderSystem.Repository.csproj",
+        "packagesPath": "/Users/ltzzzzzzz/.nuget/packages/",
+        "outputPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ltzzzzzzz/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.IRepository/BugWorkOrderSystem.IRepository.csproj": {
+                "projectPath": "/Users/ltzzzzzzz/Desktop/github/BugWorkOrderSystem.Api/BugWorkOrderSystem.IRepository/BugWorkOrderSystem.IRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

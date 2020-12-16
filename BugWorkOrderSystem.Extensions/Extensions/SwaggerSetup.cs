@@ -1,52 +1,51 @@
 ﻿using System;
 using System.IO;
-using BugWorkOrderSystem.Common.Helper;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace BugWorkOrderSystem.Common.Extensions
+namespace BugWorkOrderSystem.Extensions.Extensions
 {
     public static class SwaggerSetup
     {
         public static void AddSwaggerSetup(this IServiceCollection services)
         {
-            services.AddSwaggerGen(o =>
+            services.AddSwaggerGen(s =>
             {
-                var project = Appsettins.app(new string[] { "BaseInfo", "Project" });
-                var ver = Appsettins.app(new string[] { "BaseInfo", "Version" });
-
-                o.SwaggerDoc($"{project} {ver}", new OpenApiInfo
+                s.SwaggerDoc("BugWorkOrderSystem.Api", new OpenApiInfo
                 {
-                    Version = ver,
-                    Title = $"{project} 接口文档 -- Netcore3.1",
-                    Description = $"{project}.Api {ver}",
+                    Version = "V1",
+                    Title = "BugWorkOrderSystem.Api",
+                    Description = "BugWorkOrderSystem --接口文档 Netcore3.1",
                     Contact = new OpenApiContact
                     {
                         Name = "Ltzzzzzzz",
                         Email = "495236549@qq.com",
-                        Url = new Uri($"https://github.com/Ltzzzzzzz/{project}.Api")
+                        Url = new Uri("https://github.com/Ltzzzzzzz")
                     }
                 });
-
-                o.OperationFilter<AddResponseHeadersFilter>();
-                o.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
-                o.OperationFilter<SecurityRequirementsOperationFilter>();
-                o.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
-                {
-                    Description = "JwT授权(数据将在请求头中进行传输)直接在下框中输入 Bearer{ token}(注意两者之间是空格)",
-                    Name = "Authorization",
-                    In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.ApiKey
-
-                });
-
-                // 配置xml注释
+                // xml注释
                 var basePath = AppContext.BaseDirectory;
-                var xmlPath = Path.Combine(basePath, $"{project}.Api.xml");
-                var modelXmlPath = Path.Combine(basePath, $"{project}.Model.xml");
-                o.IncludeXmlComments(xmlPath, true);
-                o.IncludeXmlComments(modelXmlPath);
+                var xmlPath = Path.Combine(basePath, "BugWorkOrderSystem.Api.xml");
+                s.IncludeXmlComments(xmlPath, true);
+                var modelXmlPath = Path.Combine(basePath, "BugWorkOrderSystem.Model.xml");
+                s.IncludeXmlComments(modelXmlPath);
+
+                #region 加锁
+                s.OperationFilter<AddResponseHeadersFilter>();
+                s.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
+                var openApiSecurity = new OpenApiSecurityScheme
+                {
+                    Description = "JWT认证授权，使用直接在下框中输入Bearer {token}（注意两者之间是一个空格）\"",
+                    Name = "Authorization",  //jwt 默认参数名称
+                    In = ParameterLocation.Header,  //jwt默认存放Authorization信息的位置（请求头）
+                    Type = SecuritySchemeType.ApiKey
+                };
+
+                s.AddSecurityDefinition("oauth2", openApiSecurity);
+                // 在header中添加token，传递到后台
+                s.OperationFilter<SecurityRequirementsOperationFilter>();
+                #endregion
             });
         }
     }

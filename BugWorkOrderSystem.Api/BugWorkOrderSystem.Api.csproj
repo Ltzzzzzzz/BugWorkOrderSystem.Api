@@ -11,12 +11,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\avatar\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BugWorkOrderSystem.Extensions\BugWorkOrderSystem.Extensions.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
-    <ProjectReference Include="..\BugWorkOrderSystem.Services\BugWorkOrderSystem.Services.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

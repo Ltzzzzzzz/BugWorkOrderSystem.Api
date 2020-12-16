@@ -1,10 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using BugWorkOrderSystem.IServices.Base;
+using BugWorkOrderSystem.Model;
+using BugWorkOrderSystem.Model.Models;
+using BugWorkOrderSystem.Model.ViewModels.RoleProfiles;
+
 namespace BugWorkOrderSystem.IServices
 {
-    public class IRoleServices
+    public interface IRoleServices : IBaseServices<Role>
     {
-        public IRoleServices()
-        {
-        }
+        Task<MessageModel<List<RoleViewDto>>> QueryList();
     }
 }

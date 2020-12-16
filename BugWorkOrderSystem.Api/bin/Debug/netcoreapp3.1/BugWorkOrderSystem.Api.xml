@@ -4,26 +4,78 @@
         <name>BugWorkOrderSystem.Api</name>
     </assembly>
     <members>
-        <member name="M:BugWorkOrderSystem.Api.Controllers.LoginController.Login(BugWorkOrderSystem.Model.ViewModels.Users.UserLogin)">
+        <member name="T:BugWorkOrderSystem.Api.Controllers.PageController">
+            <summary>
+            页面控制器
+            </summary>
+        </member>
+        <member name="M:BugWorkOrderSystem.Api.Controllers.PageController.GetMenu">
+            <summary>
+            获取菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BugWorkOrderSystem.Api.Controllers.UserController">
+            <summary>
+            用户控制器
+            </summary>
+        </member>
+        <member name="M:BugWorkOrderSystem.Api.Controllers.UserController.Login(BugWorkOrderSystem.Model.ViewModels.UserProfiles.UserLoginDto)">
             <summary>
             登陆
             </summary>
-            <remarks>返回用户信息和token</remarks>
-            <param name="login">登陆账号密码</param>
-            <returns>返回用户信息和token</returns>
+            <param name="login"></param>
+            <returns></returns>
         </member>
-        <member name="M:BugWorkOrderSystem.Api.Controllers.LoginController.GetMD5Password(System.String)">
+        <member name="M:BugWorkOrderSystem.Api.Controllers.UserController.Logout(System.Guid)">
             <summary>
-            获取密码MD5字符串
+            登出
             </summary>
-            <remarks>返回密码MD5字符串</remarks>
-            <param name="str">密码</param>
-            <returns>返回密码MD5字符串</returns>
+            <param name="id"></param>
+            <returns></returns>
         </member>
-        <member name="F:BugWorkOrderSystem.Api.Startup.Env">
+        <member name="M:BugWorkOrderSystem.Api.Controllers.UserController.Update(BugWorkOrderSystem.Model.ViewModels.UserProfiles.UserUpdateDto)">
             <summary>
-            环境
+            更新
             </summary>
+            <param name="update"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BugWorkOrderSystem.Api.Controllers.UserController.GetUsers(System.Int32,System.Int32)">
+            <summary>
+            获取所有用户
+            </summary>
+            <param name="page">页数</param>
+            <param name="rows">条数</param>
+            <returns></returns>
+        </member>
+        <member name="M:BugWorkOrderSystem.Api.Controllers.UserController.AddUser(BugWorkOrderSystem.Model.ViewModels.UserProfiles.UserAddDto)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="add"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BugWorkOrderSystem.Api.Controllers.UserController.DeleteUser(System.Guid)">
+            <summary>
+            删除用户（假删除）
+            </summary>
+            <param name="id">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BugWorkOrderSystem.Api.Controllers.UserController.DisableUser(System.Guid)">
+            <summary>
+            用户停用
+            </summary>
+            <param name="id">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BugWorkOrderSystem.Api.Controllers.UserController.ResetPassword(System.Guid)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="id">用户id</param>
+            <returns></returns>
         </member>
     </members>
 </doc>

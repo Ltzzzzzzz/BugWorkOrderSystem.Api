@@ -5,17 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="Authorizations\" />
-    <Folder Include="Authorizations\Policys\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BugWorkOrderSystem.Common\BugWorkOrderSystem.Common.csproj" />
-    <ProjectReference Include="..\BugWorkOrderSystem.Model\BugWorkOrderSystem.Model.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="6.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Authorization\" />
+    <Folder Include="Authorization\Helper\" />
+    <Folder Include="Authorization\Policy\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="AutoMapper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BugWorkOrderSystem.Services\BugWorkOrderSystem.Services.csproj" />
   </ItemGroup>
 </Project>
